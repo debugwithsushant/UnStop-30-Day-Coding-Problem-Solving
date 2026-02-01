@@ -35,5 +35,7 @@ public class Day4 {
         // Call the user logic function and print the result
         int result = maxSunsetViews(heights, K);
         System.out.println(result);
+
+        scanner.close();
     }
 }
