@@ -1,6 +1,5 @@
 // 1 Feb : Mountain View Maximizer
 
-import java.util.Scanner;
 
 public class Day4 {
     public static int maxSunsetViews(int[] heights, int K) {
