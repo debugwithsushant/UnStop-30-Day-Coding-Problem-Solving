@@ -3,8 +3,8 @@
 import java.util.*;
 
 public class Day5 {
-    static int N, K;
-    static long[] energy;
+    static int N = 5, K = 5;
+    static long[] energy = {0, 10, 10, 10, 10, 10};
     static List<Integer>[] tree;
     static long[][][] dp;
 
@@ -53,27 +53,19 @@ public class Day5 {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        N = sc.nextInt();
-        K = sc.nextInt();
-
-        energy = new long[N+1];
-        for (int i = 1; i <= N; i++) {
-            energy[i] = sc.nextLong();
-        }
-
         tree = new ArrayList[N+1];
-        for (int i =1; i <= N; i++) {
+        for (int i = 1; i <= N; i++) {
             tree[i] = new ArrayList<>();
         }
-
-        for (int i = 0; i < N-1; i++) {
-            int u = sc.nextInt();
-            int v = sc.nextInt();
-            tree[u].add(v);
-            tree[v].add(u);
-        }
+        
+        tree[1].add(2);
+        tree[2].add(1);
+        tree[2].add(3);
+        tree[3].add(2);
+        tree[3].add(4);
+        tree[4].add(3);
+        tree[4].add(5);
+        tree[5].add(4);
 
         dp = new long[N+1][2][];
 
@@ -86,7 +78,5 @@ public class Day5 {
         } else {
             System.out.println(ans);
         }
-
-        sc.close();
     }
 }
