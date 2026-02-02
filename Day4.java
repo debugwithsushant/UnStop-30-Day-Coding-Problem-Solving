@@ -18,24 +18,19 @@ public class Day4 {
         return Math.min(count, K);
     }
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        
-        // Read N and K
-        int N = scanner.nextInt();
-        int K = scanner.nextInt();
+    public static void main(String[] args) {        
+        int N = 5;
+        int K = 3;
         
         int[] heights = new int[N];
         
-        // Read N space-separated integers
-        for (int i = 0; i < N; i++) {
-            heights[i] = scanner.nextInt();
-        }
+        heights[0] = 2;
+        heights[1] = 4;
+        heights[2] = 1;
+        heights[3] = 5;
+        heights[4] = 3;
         
-        // Call the user logic function and print the result
         int result = maxSunsetViews(heights, K);
         System.out.println(result);
-
-        scanner.close();
     }
 }
