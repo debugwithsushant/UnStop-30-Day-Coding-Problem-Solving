@@ -1,5 +1,7 @@
 // 12 Feb : Mall Escalator Optimization
 
+import java.util.*;
+
 class Day15 {
     public static void calculateMinimumMinutes(int N, int M, List<int[]> escalators, int[] result) {
         List<List<Integer>> graph = new ArrayList<>();
