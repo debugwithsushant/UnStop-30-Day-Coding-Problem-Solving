@@ -1,4 +1,4 @@
-// 13 Feb : MINIMUM TIME TO CROSS THE GRID WITH PORTAL NETWORK
+// 13 Feb : Minimum Time To Cross The Grid With Portal Network
 
 import java.util.ArrayList;
 import java.util.Arrays;
