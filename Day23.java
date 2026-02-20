@@ -31,4 +31,10 @@ class Day23 {
         }
         return true;
     }
+
+    public static void main(String[] args) {
+        List<Integer> arr = List.of(2, 3, 4, 5, 6, 7, 8, 9, 10);
+        String encryptedMessage = encryptMessage(arr);
+        System.out.println(encryptedMessage); // Output: "* * 4 * 6 * 8 9 10"
+    }
 }
